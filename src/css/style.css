@@ -68,6 +68,8 @@ body {
   display: flex;
   flex-direction: column;
   align-self: stretch; }
+  .alerts-list:last-child {
+    border-bottom: 0.2rem solid var(--secondary-green); }
   .alerts-list__item {
     border-top: 0.2rem solid var(--secondary-green);
     display: flex;
@@ -77,7 +79,9 @@ body {
     height: 8rem; }
   .alerts-list__message {
     max-width: 18rem; }
-  .alerts-list__icon {
-    color: var(--secondary-green);
-    width: 2rem;
-    height: 3rem; }
+  .alerts-list__icon-container {
+    padding: 1rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--secondary-green);
+    border-radius: .3rem; }
