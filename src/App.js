@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './css/style.css';
 
-function App() {
-  return (
-    <div className="app">
-      <div className="dashboard">
-        DASHBOARD
+import Dashboard from './components/Dashboard';
+import Alerts from './components/Alerts';
+
+class App extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  render( ) {
+    return (
+      <div className="app">
+        <Dashboard />
+        <Alerts />
       </div>
-      <div className="alerts">
-        ALERTS
-      </div>
-    </div>
-  );
+    );
+  }
+  
 }
 
 export default App;

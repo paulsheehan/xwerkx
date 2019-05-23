@@ -1,8 +1,22 @@
 .dashboard {
     display: flex;
+    flex: 1;
     flex-direction: column;
     background-color: var(--dark-gray);
-    align-self: stretch;
-    margin-bottom: 3rem;
     border-radius: .5rem;
+    align-self: stretch;
+    color: var(--dashboard-blue);
 }
+
+.dashboard-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dashboard-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+

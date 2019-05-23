@@ -1,7 +1,37 @@
 .alerts {
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     background-color: var(--primary-green);
-    align-self: stretch;
     border-radius: .5rem;
+    align-self: stretch;
+    color: var(--font-white);
+    flex: 3;
+}
+
+.alerts-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.alerts-list {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    &__item {
+        border-top: .2rem solid var(--secondary-green);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 8rem;
+    }
+    &__message {
+        max-width: 18rem;
+    }
+    &__icon {
+        color: var(--secondary-green);
+        width: 2rem;
+        height: 3rem;
+    }
 }

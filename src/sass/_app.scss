@@ -1,7 +1,8 @@
 .app {
-    height: 100vh;
+    height: 100rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex: 0 0 18%;
+    overflow: hidden;
+    text-transform: uppercase;
+    margin: 1rem;
 }
