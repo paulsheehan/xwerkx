@@ -43,12 +43,36 @@ body {
 .dashboard-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 5rem; }
+  .dashboard-nav__title {
+    display: flex;
+    font-size: 1.6rem; }
 
 .dashboard-main {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-between;
+  align-items: center;
+  position: relative; }
+  .dashboard-main > * {
+    width: 33%; }
+  .dashboard-main__pie {
+    height: 21rem; }
+  .dashboard-main__bar {
+    align-self: flex-start;
+    height: 12rem; }
+  .dashboard-main__difference {
+    align-self: flex-start;
+    height: 12rem; }
+  .dashboard-main__title {
+    color: var(--font-white);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100; }
+  .dashboard-main__digits {
+    text-align: center;
+    font-size: 7rem; }
 
 .alerts {
   margin-top: 1.5rem;

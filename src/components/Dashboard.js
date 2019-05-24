@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../css/style.css';
+import arrow from '../img/svg/right_arrow.svg';
+import settings from '../img/svg/settings.svg';
 
 import ActiveClients from './ActiveClients';
 import LastTwelveMonths from './LastTwelveMonths';
@@ -30,8 +32,15 @@ class Dashboard extends Component {
         return (
             <div className="dashboard">
                 <div className="dashboard-nav">
-                    <div>CLIENTS > </div>
-                    <div> *</div>
+                    <div className="dashboard-nav__title">
+                        <h3 >
+                            CLIENTS 
+                        </h3>
+                        <img src={arrow} alt="Right Arrow"/>
+                        
+                    </div>
+                    
+                    <img src={settings} alt="Settings"/>
                 </div>
                 <div className="dashboard-main">
                     <ActiveClients data={this.state.data} />

@@ -12,11 +12,47 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 5rem;
+    &__title {
+        display: flex;
+        font-size: 1.6rem;
+    }
+
 }
 
 .dashboard-main {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    & > * {
+        width:33%;
+    }
+    &__pie {
+        height: 21rem;
+    }
+
+    &__bar {
+        align-self: flex-start;
+        height: 12rem;
+    }
+
+    &__difference {
+        align-self: flex-start;
+        height: 12rem;
+    }
+
+    &__title {
+        color: var(--font-white);
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 100; 
+    }
+
+    &__digits {
+        text-align: center;
+        font-size: 7rem;
+    }
 }
 
