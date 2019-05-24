@@ -17,20 +17,24 @@
 .alerts-list {
     display: flex;
     flex-direction: column;
-    align-self: stretch;
+    align-items: stretch; 
+
     &:last-child {
         border-bottom: .2rem solid var(--secondary-green);
     }
     &__item {
-        border-top: .2rem solid var(--secondary-green);
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         align-items: center;
+        justify-content: space-around;
         height: 8rem;
+        border-top: .2rem solid var(--secondary-green);
+    }
+    &__item > * {
+        margin: 0 auto;
+        width: 10%;
     }
     &__message {
-        max-width: 18rem;
     }
     &__icon-container {
         padding: 1rem;

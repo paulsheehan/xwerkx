@@ -3,6 +3,7 @@ import '../css/style.css';
 import cake from '../img/svg/cake.svg';
 
 import ReactSVG from 'react-svg'
+import TextTruncate from 'react-text-truncate';
 
 const AlertsList = (props) => {
     return (
@@ -12,7 +13,14 @@ const AlertsList = (props) => {
             </div>
             
             <div>{props.alert.name}</div>
-            <div className="alerts-list__message">{props.alert.message}</div>
+            <TextTruncate 
+                className="alerts-list__message"
+                line={2}
+                element="div"
+                text={props.alert.message}
+                truncateText="…"
+            />
+
             <div>{props.alert.date}</div>
             <div>{props.alert.importance}</div>
         </li>

@@ -67,18 +67,19 @@ body {
 .alerts-list {
   display: flex;
   flex-direction: column;
-  align-self: stretch; }
+  align-items: stretch; }
   .alerts-list:last-child {
     border-bottom: 0.2rem solid var(--secondary-green); }
   .alerts-list__item {
-    border-top: 0.2rem solid var(--secondary-green);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    height: 8rem; }
-  .alerts-list__message {
-    max-width: 18rem; }
+    justify-content: space-around;
+    height: 8rem;
+    border-top: 0.2rem solid var(--secondary-green); }
+  .alerts-list__item > * {
+    margin: 0 auto;
+    width: 10%; }
   .alerts-list__icon-container {
     padding: 1rem;
     width: 4rem;
